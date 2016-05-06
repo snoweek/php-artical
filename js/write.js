@@ -28,6 +28,7 @@ $(function(){
             url: "/artical/user/work_handle.php?act=add_work",    
             data: {work_name:work_name},
             success: function(json_message){  
+            	$("#clicked_work").html("当前选中文集");
             	var work_id=(eval(json_message)).work_id;   
             	  		       		
             	$("#work_list").append("<tr id=\"work\">" +
